@@ -1,0 +1,56 @@
+<div id="myModal" class="modal">
+
+    <!-- Modal content -->
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2>Tambah Barang</h2>
+      </div>
+      <div class="modal-body">
+        <form action="{{ route('barang.store') }}" method="POST" enctype="multipart/form-data">
+                        
+            @csrf
+
+            <div class="form-group">
+                <label class="font-weight-bold">GAMBAR</label>
+                <input type="file" class="form-control @error('FotoProduk') is-invalid @enderror" name="image">
+            
+                <!-- error message untuk title -->
+                @error('FotoProduk')
+                    <div class="alert alert-danger mt-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+
+            <div class="form-group">
+                <label class="font-weight-bold">JUDUL</label>
+                <input type="text" class="form-control @error('NamaBarang') is-invalid @enderror" name="NamaBarang" value="{{ old('title') }}" placeholder="Masukkan Judul Post">
+            
+                <!-- error message untuk title -->
+                @error('NamaBarang')
+                    <div class="alert alert-danger mt-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+
+            <div class="form-group">
+                <label class="font-weight-bold">Harga Beli</label>
+                <input type="text" class="form-control @error('content') is-invalid @enderror" name="HargaBeli" rows="5" placeholder="Masukkan Konten Post" value="{{ old('HargaBeli') }}">
+            
+                <!-- error message untuk content -->
+                @error('HargaBeli')
+                    <div class="alert alert-danger mt-2">
+                        {{ $message }}
+                    </div>
+                @enderror
+            </div>
+
+            <button type="submit" class="btn btn-md btn-primary">SIMPAN</button>
+            <button type="reset" class="btn btn-md btn-warning">RESET</button>
+
+        </form> 
+    </div>
+    </div>
+    </div>
+  </div>
