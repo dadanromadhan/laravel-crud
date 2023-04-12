@@ -10,7 +10,7 @@
 ## About This App
 
 Aplikasi Web ini dibangun Menggunakan Laravel 10 yang memiliki fitur swap variable dan function terbilang yang bisa di akses pada dashboardnya atau menggunakan API(khusus untuk fungsi terbilang). Berikut adalah screenshotnya:
-<img src="https://ibb.co/tbKTM0P" width="400" alt="Dashboard">
+<img src="https://i.ibb.co/19QtfCJ/dashboard.jpg" width="400" alt="Dashboard">
 
 ## About Laravel
 
