@@ -7,11 +7,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-## About This App
-
-Aplikasi Web ini dibangun Menggunakan Laravel 10 yang memiliki fitur swap variable dan function terbilang yang bisa di akses pada dashboardnya atau menggunakan API(khusus untuk fungsi terbilang). Berikut adalah screenshotnya:
-<img src="https://i.ibb.co/19QtfCJ/dashboard.jpg" width="400" alt="Dashboard">
-
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
